@@ -19,13 +19,13 @@
   <nav class="navbar">
     <ul class="navbar__menu">
       <li class="navbar__item">
-        <a href="#" class="navbar__link">
+        <a href="{% url 'seletivehome' %}" class="navbar__link">
           <img src="{% static 'appseletive/img/dashboard.png' %}" width="45px" alt="">
           <span>Dashboard</span></a>
       </li>
       <div class="menu__opcoes">
         <li class="navbar__item">
-          <a href="#" class="navbar__link">
+          <a href="{% url 'nova_empresa' %}" class="navbar__link">
             <img src="{% static 'appseletive/img/add-empresa.png' %}" width="45px" alt="">
             <span>Adicionar Empresa</span></a>
         </li>

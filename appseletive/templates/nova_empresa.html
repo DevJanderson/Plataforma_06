@@ -1,0 +1,114 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block 'links-head' %}
+<link rel="stylesheet" href="{% static 'appseletive/css/style-empresa.css' %}">
+{% endblock %}
+<!-- ------------------------------------- -->
+{% block 'title' %} Add Empresa {% endblock %}
+<!-- ------------------------------------- -->
+{% block 'body' %}
+<section>
+    <div class="container">
+      <h2>Cadastro de empresa </h2>
+        <p>Preencha o formulário abaixo para cadastra a empresa que você fará o processo seletivo.</p>
+      
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span class="text">Nome</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+               <input type="text" name="" required="required">
+               <span class="text">Sobrenome</span>
+               <span class="line"></span>
+            </div>
+          </div>
+         </div>
+  
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Telefone</span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">E-mail</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Cidade</span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Endereço</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Nicho de mercado</span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Tecnologias usadas</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">Caracteristicas da empresa</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span class="text">logo</span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+
+       <!-- Botão Enviar -->
+       <div class="row100">
+        <div class="col">
+          <input type="submit" value="Enviar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

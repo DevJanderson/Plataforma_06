@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-$cla7q1yppv48#a98^!sf#wsa07i7=9-+1ddia)!a%(sz_pp2)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -77,6 +77,17 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': 'db.lbunxhzgduitviucgjwp.supabase.co',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '3rIEEZTroIQ5v6Ia',
+        'PORT': '5432',
+    }
+}
 
 # DATABASES = {
 #     'default': {

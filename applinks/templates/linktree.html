@@ -1,70 +1,135 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{% static 'applinks/css/applinks.css' %}">
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linktree J.C.Lira</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Sidebar</title>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <div id="container">
-        <div id="profile">
-            <img src="{% static 'applinks/img/linkding-janderson.png' %}"
-                alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo." />
-            <p>Janderson Lira</p>
-        </div>
+<body class="h-screen bg-gray-50 ">
+  <header class="container bg-white mx-auto py-2 px-4  rounded my-2 shadow">
+    <!-- flex header    -->
+    <div class="flex justify-between">
+      <!--  Logo/Nome    -->
+      <div class="flex items-center gap-4">
+        <img class="w-10 h-10 border-2 border-sky-400 rounded-full shadow" src="https://github.com/janderlira.png"
+          alt="">
+        <h1>Janderson Lira</h1>
+      </div>
 
-        <br>
-
-        <ul>
-            <li>
-                <a href="#">Criativo T.I</a>
-            </li>
-
-            <li>
-                <a href="#">Baixar meu e-book</a>
-            </li>
-
-            <li>
-                <a href="">Ver meu portfólio</a>
-            </li>
-
-            <li>
-                <a href="" target="_blank">Motorista</a>
-            </li>
-        </ul>
-        <div id="social-links">
-            <a href="https://github.com/DevJanderson" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <!-- 
-        <a href="" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
+      <!--  Itens Menu      -->
+      <div class="flex items-center space-x-6 text-bold text-sm uppercase">
+        <a href="">
+          <img
+            src="https://img.icons8.com/external-bearicons-blue-bearicons/512/external-Home-file-and-document-bearicons-blue-bearicons.png"
+            alt="" class="w-8 h-8">
         </a>
+        <a href="">
+          <img src="https://img.icons8.com/color/512/blog.png" alt="" class="w-8 h-8">
+        </a>
+        <a href="">
+          <img src="https://img.icons8.com/color/512/github--v1.png" alt="" class="w-8 h-8">
+        </a>
+        <a href="">
+          <img src="https://img.icons8.com/fluency/512/linkedin.png" alt="" class="w-8 h-8">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Section Content  -->
+  <div class="container mx-auto border-2 border-white-600  p-4 bg-[url('img/fundo.svg')] rounded">
+    <!-- Div Flex -->
+    <div class="flex flex-col sm:flex-row">
+      <!-- lando left -->
+      <div class="w-1/2 p-6 w-full">
+        <h2 class="text-3xl font-bold p-4">
+          Olá, eu me chamo Janderson sou desenvolvedor Web
+        </h2>
+      </div>
+      <!-- lado right -->
+      <div class="w-1/2 p-6 space-y-4 w-full ">
+        <h2 class="text-xl font-bold">#Skills</h2>
+        <div class="flex justify-center gap-16 ">
+          <img class="w-16  h-16  "
+            src="https://img.icons8.com/external-justicon-lineal-color-justicon/512/external-html-file-file-type-justicon-lineal-color-justicon.png"
+            alt="">
 
-        <a href="" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a> -->
+          <img class="w-16  h-16w-16 "
+            src="https://img.icons8.com/external-soft-fill-juicy-fish/512/external-css-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
+            alt="">
 
-            <a href="https://www.linkedin.com/in/janderson-lira-ba8831258/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+          <img class="w-16  h-16w-16  border-2 border-black p-2 rounded-lg bg-gray-800"
+            src="https://img.icons8.com/color/2x/tailwindcss.png" alt="">
+
         </div>
+        <div class="flex justify-center gap-16 ">
+          <img class="w-16  h-16  "
+          src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-python-mobile-app-development-flaticons-lineal-color-flat-icons.png"
+          alt="">
+
+          <img class="w-16  h-16  "
+          src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/512/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-filled-tal-revivo.png"
+          alt="">
+
+          <img class="w-16  h-16 border-2 border-black p-2 rounded-lg bg-gray-800 "
+          src="https://img.icons8.com/plasticine/512/react.png"
+          alt="">
+
+        </div>
+      </div>
 
     </div>
+  </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Section Link's -->
+  <section class="container mx-auto">
+    <!-- flex -->
+    <div class="flex flex-col sm:flex-row">
+      <!-- left -->
+      <div class="w-full md:w-1/2 flex justify-center items-center">
+        <img class="w-full w-full " src="img/DrawKit Vector Illustration Black Friday & Online Shopping (3).svg" alt="">
+      </div>
 
-    <script src="{% static 'applinks/css/applinks.js' %}"></script>
+      <!-- right -->
+      <div class="w-full  py-4 px-4 space-y-2 md:w-1/2 md:px-0">
+        <h2 class="text-2xl mb-2">Link's:</h2>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          Criativo T.I
+        </div>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          E-book's
+        </div>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          Motorista
+        </div>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          Montagem e manutenção
+        </div>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          Redes
+        </div>
+        <div class="border-2 px-4 py-4 rounded-lg shadow w-full">
+          Mídias sociais
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer -->
+  <footer class="container mx-auto bg-black text-white text-center text-sm h-14 flex justify-center items-center">
+    Desenvolvido por Janderson Lira 2023
+  </footer>
 </body>
 
 </html>

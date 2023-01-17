@@ -3,6 +3,7 @@
 {% load static %}
 {% block 'links-head' %}
 <link rel="stylesheet" href="{% static 'appseletive/css/style-empresa.css' %}">
+<link rel="stylesheet" href="{% static 'appseletive/css/upload-img.css' %}">
 {% endblock %}
 <!-- ------------------------------------- -->
 {% block 'title' %} Add Empresa {% endblock %}
@@ -12,7 +13,8 @@
     <div class="container">
       <h2>Cadastro de empresa </h2>
         <p>Preencha o formulário abaixo para cadastra a empresa que você fará o processo seletivo.</p>
-      
+      <form action="">
+
         <div class="row100">
           <div class="col">
             <div class="inputBox">
@@ -94,10 +96,14 @@
           <div class="row100">
             <div class="col">
               <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span class="text">logo</span>
-                <span class="line"></span>
+                <div class="form-upload">
+                  <label for="file-upload-1">Upload
+                    <input type="file" id="file-upload-1" class="file-upload">
+                  </label>
+                  <p id="filename-1" class="filename">Selecione a logo.</p>
+                </div>
               </div>
+              
             </div>
           </div>
 
@@ -107,8 +113,13 @@
           <input type="submit" value="Enviar">
         </div>
       </div>
+      </form>
     </div>
   </section>
 
+  {% block 'script-js' %}
+  <script src="{% static 'appseletive/js/upload-img.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  {% endblock %}
 
 {% endblock %}

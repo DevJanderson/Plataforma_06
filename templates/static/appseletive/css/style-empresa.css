@@ -6,12 +6,6 @@ h1 {
 }
 
 
-
-/* Configs Body + Responsivo */
-body {
-    overflow-x: hidden;
-}
-
 @media (max-width: 600px)
 {
     section::before {
@@ -38,32 +32,19 @@ body {
 }
 
 
-
-
 /* Shape conteúdo formulário */
 .container {
-    /* position: relative; */
-    /* z-index: 100; */
-    /* width: 100%; */
     max-width: 700px;
     margin: 0 auto;
-    padding:30px 50px;
+    padding: 50px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0,0,0,0.1);
-    /* border: 1px solid rgba(255, 255, 255, 0.25);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
     border-radius: 10px;
-    /* overflow: hidden; */
     backdrop-filter: blur(15px);
     border: 2px solid rgba(255, 255, 255, 0.9);
-
 }
 
 .container::before {
-    /* content: ''; */
-    /* position: absolute; */
-    /* top: 0; */
     left: -40%;
     width: 100%;
     height: 100%;
@@ -79,7 +60,6 @@ body {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 20px;
-    /* text-shadow: 5px 5px 7px rgba(0,0,0,0.5);; */
 }
 
 .container p {
@@ -87,7 +67,7 @@ body {
     text-align: center;
     color: #444;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .container .row100 {
